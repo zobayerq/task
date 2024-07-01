@@ -4,13 +4,13 @@ import { IoLogoYoutube } from "react-icons/io5";
 import useAuth from "../../hooks/useAuth";
 
 import { TbLogout } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const UpNavbar = () => {
     const { user, handleSignOut} = useAuth()
     return (
-      <div className=" bg-custom-bg  mb-4">
+      <div className=" bg-blue-400  mb-4">
           <div className=" md:flex lg:flex justify-between  max-w-screen-xl mx-auto py-3 text-white  space-y-2">
             <div className="text-2xl flex gap-4 mx-3 items-center justify-center  ">
                 <a href="" className="hover:text-green-700"> <IoLogoYoutube /></a>
@@ -23,8 +23,42 @@ const UpNavbar = () => {
 
             <div className=" md:flex lg:flex space-y-2  lg:space-y-0 md:space-y-0 gap-8 ">
                 <div className=" flex gap-1 items-center justify-center">
-                <FaPhoneAlt className="text-xl" />
-               <p className="text-lg font-medium"> Hotline: +8801847066362</p>
+                <div className=" hidden lg:flex">
+        {/* Main navigation */}
+        <ul className="flex gap-7 font-semibold items-center">
+        <NavLink
+              to="/"
+              className={({ isActive, isPending }) =>
+            isPending ? "  text-lg  font-medium" : isActive ? "  border-b-[3px] border-custom-bg text-lg  font-medium  " :"text-lg  font-medium group flex  cursor-pointer flex-col"
+            }
+            >
+            Home
+              <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-custom-bg transition-all duration-300 group-hover:w-full"></span>
+            </NavLink>
+        <NavLink
+              to="/AddContest"
+              className={({ isActive, isPending }) =>
+            isPending ? "  text-lg  font-medium" : isActive ? "  border-b-[3px] border-custom-bg text-lg  font-medium  " :"text-lg  font-medium group flex  cursor-pointer flex-col"
+            }
+            >
+            Add Task
+              <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-custom-bg transition-all duration-300 group-hover:w-full"></span>
+            </NavLink>
+
+        <NavLink
+              to="/AllContestsPage"
+              className={({ isActive, isPending }) =>
+            isPending ? "  text-lg  font-medium" : isActive ? "  border-b-[3px] border-custom-bg text-lg  font-medium  " :"text-lg  font-medium group flex  cursor-pointer flex-col"
+            }
+            >
+            Manage Task
+              <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-custom-bg transition-all duration-300 group-hover:w-full"></span>
+            </NavLink>
+         
+            
+        </ul>
+      </div>
+        </div>
                 </div>
                 {user ? (
                     <div className="flex justify-center gap-4">
@@ -87,7 +121,7 @@ const UpNavbar = () => {
             </div>
             
         </div>
-      </div>
+    
     );
 };
 

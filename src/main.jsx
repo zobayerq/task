@@ -9,6 +9,7 @@ import {
 import Root from './Component/Root/Root';
 import Home from './Component/Home/Home';
 import Dashbord from './Component/Dashbord/Dashbord';
+import Privetrout from './Component/Privetrout/Privetrout';
 
 import ManageUser from './Component/AdminComponent/Pages/ManageUser/ManageUser';
 
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
      
       {
         path: "/AddContest",
-        element:<Addtask></Addtask>,
+        element: <Privetrout><Addtask></Addtask></Privetrout>,
       },
      
       
