@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.pop{
+  font-family: "Poppins"
+}
+
+.bangla{
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+/* Define default light mode */
+
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #262525;
+    color: aliceblue;
+  }
+  
+  /* Add to your global CSS or a specific CSS module */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-gray-900 {
+  scrollbar-color: #1a202c #edf2f7;
+}
+
+.scrollbar-track-gray-100 {
+  scrollbar-color: #edf2f7 #edf2f7;
+}
+
+  
