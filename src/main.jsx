@@ -35,6 +35,7 @@ import UpdateSlidersimg from './Component/AdminComponent/Pages/UpdateSlidersimg/
 import Addtask from './Component/AdminComponent/Pages/Addtask/Addtask';
 import TaskList from './Component/pages/TaskList/TaskList';
 import ManageTask from './Component/AdminComponent/Pages/ManageTask/ManageTask';
+import UpdateTask from './Component/pages/UpdateTask/UpdateTask';
 
 
 const queryClient = new QueryClient()
@@ -70,6 +71,11 @@ const router = createBrowserRouter([
       {
         path: "/ManageTask",
         element: <ManageTask></ManageTask>,
+      },
+     
+      {
+        path: "/ManageTask/update/:id",
+        element: <UpdateTask></UpdateTask>,
       },
      
       
