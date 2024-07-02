@@ -10,6 +10,8 @@ This project is a small web application for managing a list of tasks. It include
 - Display a list of tasks with title, description, and completion status.
 - Add, edit, delete, and mark tasks as completed or not completed.
 - Responsive design for desktop and mobile devices.
+- also i add login system and admin panel.
+
 
 ### Back-End
 - RESTful API endpoints to manage tasks.
@@ -18,18 +20,12 @@ This project is a small web application for managing a list of tasks. It include
 
 ## Technologies Used
 
-- **Front-End**: React.js
+- **Front-End**: React.js.
 - **Back-End**: Node.js with Express.js
-- **Database**: PostgreSQL
-- **CSS Framework**: Bootstrap
+- **Database**: mongodb
+- **CSS Framework**: Tailwind CSS
 
 ## Setup Instructions
-
-### Prerequisites
-
-- Node.js (version >= 12.0.0)
-- npm (Node Package Manager)
-- PostgreSQL
 
 ### Installation
 
@@ -37,7 +33,7 @@ This project is a small web application for managing a list of tasks. It include
 
    ```
    git clone <repository_url>
-   cd task-manager-app
+  
    ```
 
 2. Install dependencies for both front-end and back-end:
@@ -52,24 +48,14 @@ This project is a small web application for managing a list of tasks. It include
    npm install
    ```
 
-3. Set up the database:
-   
-   - Create a PostgreSQL database named `task_manager`.
-   - Configure the database connection in `backend/config/db.config.js`.
 
-4. Seed the database (if necessary):
-
-   ```bash
-   cd backend
-   npm run seed
-   ```
 
 ### Running the Application
 
 1. Start the back-end server:
 
    ```bash
-    npm i
+   
     nodemon index.js
    ```
 
@@ -78,21 +64,23 @@ This project is a small web application for managing a list of tasks. It include
 2. Start the front-end application:
 
    ```bash
-   npm i
+   
    npm run dev
    ```
 
-   The front-end should open in your default browser at `http://localhost:3001`.
+   The front-end should open in your default browser at `http://localhost:5173`.
 
 ## API Documentation
 
 ### Endpoints
 
-- `GET /api/tasks`: Retrieve all tasks.
-- `GET /api/tasks/:id`: Retrieve a specific task by ID.
-- `POST /api/tasks`: Create a new task.
-- `PUT /api/tasks/:id`: Update an existing task by ID.
-- `DELETE /api/tasks/:id`: Delete a task by ID.
+- `GET /tasks`: Retrieve all tasks.
+- `GET /tasks/:id`: Retrieve a specific task by ID.
+- `POST /tasks`: Create a new task.
+- `PUT /tasks/update/:id`: Update an existing task by ID.
+- `DELETE /tasks/delete/:id`: Delete a task by ID.
+- `PUT /tasks/toggle/:id`: Mark a task as completed by ID.
+
 
 ### Example Usage
 
@@ -102,11 +90,6 @@ This project is a small web application for managing a list of tasks. It include
   curl http://localhost:3000/api/tasks
   ```
 
-- **POST /api/tasks**
-
-  ```bash
-  curl -X POST -H "Content-Type: application/json" -d '{"title":"Task 1","description":"This is task 1","completed":false}' http://localhost:3000/api/tasks
-  ```
 
 ## Deployment
 

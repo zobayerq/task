@@ -65,7 +65,7 @@ const router = createBrowserRouter([
      
       {
         path: "/AddContest",
-        element: <Privetrout><Addtask></Addtask></Privetrout>,
+        element: <Addtask></Addtask>,
       },
      
       {
