@@ -34,6 +34,7 @@ import Slidersimg from './Component/AdminComponent/Pages/Slidersimg/Slidersimg';
 import UpdateSlidersimg from './Component/AdminComponent/Pages/UpdateSlidersimg/UpdateSlidersimg';
 import Addtask from './Component/AdminComponent/Pages/Addtask/Addtask';
 import TaskList from './Component/pages/TaskList/TaskList';
+import ManageTask from './Component/AdminComponent/Pages/ManageTask/ManageTask';
 
 
 const queryClient = new QueryClient()
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
       {
         path: "/AddContest",
         element: <Privetrout><Addtask></Addtask></Privetrout>,
+      },
+     
+      {
+        path: "/ManageTask",
+        element: <ManageTask></ManageTask>,
       },
      
       

@@ -64,7 +64,7 @@ const ManageUser = () => {
     AxiosSecure.put(`/user/toggle-role/${id}`, { role })
       .then((res) => {
         rf();
-        refetch();
+        // refetch();
         toast.success("User role changed successfully!", { position: "top-center" });
       })
       .catch((err) => {

@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaRegUser, FaTiktok } from "react-icons/fa";
+import { FaRegUser, FaTiktok } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import useAuth from "../../hooks/useAuth";
@@ -46,7 +46,7 @@ const UpNavbar = () => {
             </NavLink>
 
         <NavLink
-              to="/AllContestsPage"
+              to="/ManageTask"
               className={({ isActive, isPending }) =>
             isPending ? "  text-lg  font-medium" : isActive ? "  border-b-[3px] border-custom-bg text-lg  font-medium  " :"text-lg  font-medium group flex  cursor-pointer flex-col"
             }
