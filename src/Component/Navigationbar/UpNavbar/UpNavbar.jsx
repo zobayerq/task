@@ -8,10 +8,10 @@ import { Link, NavLink } from "react-router-dom";
 
 
 const UpNavbar = () => {
-    const { user, handleSignOut} = useAuth()
+    const { user, handleSignOut} = useAuth();
     return (
-      <div className=" bg-blue-400  mb-4">
-          <div className=" md:flex lg:flex justify-between  max-w-screen-xl mx-auto py-3 text-white  space-y-2">
+      <div className="  mb-4 pop">
+          <div className=" md:flex lg:flex justify-between  max-w-screen-xl mx-auto py-3   space-y-2">
             <div className="text-2xl flex gap-4 mx-3 items-center justify-center  ">
                 <a href="" className="hover:text-green-700"> <IoLogoYoutube /></a>
                 <a href="" className="hover:text-green-700"> <FaInstagram/></a>

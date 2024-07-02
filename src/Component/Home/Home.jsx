@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import TaskList from "../pages/TaskList/TaskList";
+
 
 
 
@@ -20,7 +20,7 @@ const Home = () => {
         <title>HomeFixer || Home</title>
       </Helmet>
 
-       <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+       <div className="bg-gray-100 min-h-screen flex items-center justify-center pop">
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
         <h1 className="text-3xl font-bold mb-4">Task Management Application</h1>
         <p className="text-lg mb-4">Welcome to our task management app. Manage your tasks efficiently!</p>
@@ -45,7 +45,7 @@ const Home = () => {
      
 
 
-     <TaskList></TaskList>
+  
      
     
     </div>

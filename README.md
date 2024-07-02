@@ -12,6 +12,12 @@ This project is a small web application for managing a list of tasks. It include
 - Responsive design for desktop and mobile devices.
 - also i add login system and admin panel.
 
+### admin email and password
+- adminjobayer@gmail.com
+- admin123
+
+
+
 
 ### Back-End
 - RESTful API endpoints to manage tasks.
@@ -84,14 +90,8 @@ This project is a small web application for managing a list of tasks. It include
 
 ### Example Usage
 
-- **GET /api/tasks**
-
-  ```bash
-  curl http://localhost:3000/api/tasks
-  ```
-
 
 ## Deployment
 
-The application is deployed on Heroku at [example-app.herokuapp.com](https://example-app.herokuapp.com).
+The application is deployed on Heroku at [https://task-b1ed3.web.app/](https://task-b1ed3.web.app/).
 

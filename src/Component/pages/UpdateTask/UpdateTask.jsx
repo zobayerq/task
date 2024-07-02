@@ -76,7 +76,7 @@ const UpdateTask = () => {
             name="title"
             value={formData.title}
             onChange={handleChange}
-            className="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="form-input  p-4 border border-custom-bg mt-1 block w-full  rounded-md shadow-sm"
             required
           />
         </div>
@@ -89,7 +89,7 @@ const UpdateTask = () => {
             name="description"
             value={formData.description}
             onChange={handleChange}
-            className="form-textarea mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="form-textarea p-4 border border-custom-bg mt-1 block w-full  rounded-md shadow-sm"
             rows="3"
           ></textarea>
         </div>
@@ -100,7 +100,7 @@ const UpdateTask = () => {
             name="completed"
             checked={formData.completed}
             onChange={e => setFormData(prevState => ({ ...prevState, completed: e.target.checked }))}
-            className="form-checkbox h-6 w-6 text-indigo-600"
+            className="form-checkbox h-6 w-6 text-custom-bg"
           />
           <label htmlFor="completed" className="ml-2 text-sm font-medium text-gray-700">
             Completed
@@ -108,7 +108,7 @@ const UpdateTask = () => {
         </div>
         <button
           type="submit"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-opacity-50"
+          className="bg-custom-bg hover:bg-indigo-700 text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-opacity-50"
         >
           {taskId ? 'Update Task' : 'Save Task'}
         </button>

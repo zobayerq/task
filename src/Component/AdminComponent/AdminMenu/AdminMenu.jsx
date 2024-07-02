@@ -22,16 +22,7 @@ const AdminMenu = () => {
                         <FaUsers />
                         Manage User</NavLink>
                     </li>
-                     <li>
-                        <NavLink to="/dashboard/AddContest">
-                        <MdMenuBook />
-                        Add Courses </NavLink>
-                    </li>
-                     <li>
-                        <NavLink to="/dashboard/Slidersimg">
-                        <FaRegImages />
-                        Slidersimg </NavLink>
-                    </li>
+               
                
                   
                     <div className="divider mb-48"></div>

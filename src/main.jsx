@@ -9,7 +9,7 @@ import {
 import Root from './Component/Root/Root';
 import Home from './Component/Home/Home';
 import Dashbord from './Component/Dashbord/Dashbord';
-import Privetrout from './Component/Privetrout/Privetrout';
+
 
 import ManageUser from './Component/AdminComponent/Pages/ManageUser/ManageUser';
 
@@ -30,8 +30,6 @@ import {
 
 import { ToastContainer } from 'react-toastify';
 
-import Slidersimg from './Component/AdminComponent/Pages/Slidersimg/Slidersimg';
-import UpdateSlidersimg from './Component/AdminComponent/Pages/UpdateSlidersimg/UpdateSlidersimg';
 import Addtask from './Component/AdminComponent/Pages/Addtask/Addtask';
 import TaskList from './Component/pages/TaskList/TaskList';
 import ManageTask from './Component/AdminComponent/Pages/ManageTask/ManageTask';
@@ -105,15 +103,7 @@ const router = createBrowserRouter([
         element: <Addtask></Addtask>,
       },
       
-      {
-        path: "Slidersimg",
-        element: <Slidersimg></Slidersimg>,
-      },
-      {
-        path: "Slidersimg/slidersimg/singledata/update/:id",
-        element:<UpdateSlidersimg></UpdateSlidersimg>,
-
-      },
+    
       
     
     
